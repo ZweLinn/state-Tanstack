@@ -1,11 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-const fetchData = async () => {
-  const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_ limit=5",
-  );
-  return res.json();
-};
+import { fetchData } from "../lib/post";
+
 export default function QueryExample() {
   const [loadData, setLoadData] = useState(false);
 
@@ -19,7 +15,7 @@ export default function QueryExample() {
 
   return (
     <div>
-      This is QueryExample
+      3. This is QueryExample
       <button onClick={() => setLoadData(true)}>Load Data</button>
       <button onClick={() => refetch()}>Refetch Data</button>
       {isLoading && <p>Loading...</p>}

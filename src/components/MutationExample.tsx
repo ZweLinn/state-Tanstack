@@ -18,7 +18,7 @@ export default function MutationExample() {
   const {mutate , data , isPending , isError , error} = useMutation({mutationFn : createPost})
   return (
     <div >
-      <div>This is MutationExample</div>
+      <div>2. This is MutationExample</div>
 
       <input
         title="post title"
