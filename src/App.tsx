@@ -1,6 +1,7 @@
 import "./App.css";
 import {CacheingExample }from "./components/CachingExample";
 import MutationExample from "./components/MutationExample";
+import OptimisticQueryExample from "./components/OptimisticQueryExample";
 import QueryExample from "./components/QueryExample";
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
       <br/>
     
       <CacheingExample/>
+      <br/>
+      <OptimisticQueryExample/>
     </main>
   );
 }
